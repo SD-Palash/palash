@@ -1,0 +1,121 @@
+@media only screen and (max-width: 1199px){
+    .feature-icon {
+        width: 20%;
+    }
+    .feature-text {
+        max-width: 76%;
+    }
+}
+@media only screen and (max-width: 991px){
+    .feature-icon {
+        width: 25%;
+    }
+    .feature-icon span i {
+        font-size: 25px;
+    }
+    .feature-text {
+        max-width: 70%;
+    }
+    .same-image {
+        width: 33.33%;
+    }
+    .team-section:nth-child(1), .team-section:nth-child(2) {
+        margin-bottom: 50px;
+    }
+    .timer-section:nth-child(1), .timer-section:nth-child(2) {
+        margin-bottom: 50px;
+    }
+    .discus-left {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .discus-left h3 {
+        margin-bottom: 20px;
+    }
+    .discus-middle {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .discus-right a {
+        display: inline;
+    }
+    .footer-section:nth-child(1), .footer-section:nth-child(2) {
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .feature-icon {
+        width: 15%;
+    }
+    .feature-text {
+        max-width: 80%;
+    }
+    .image-text {
+        padding: 8px 0;
+    }
+    .footer-section {
+        margin-bottom: 20px !important;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 575px){
+    .navbar-brand img {
+        padding-left: 15px;
+    }
+    .same-image {
+        width: 50%;
+    }
+    .image-text {
+        padding: 20px 0;
+    }
+    .team-section {
+        width: 50%;
+    }
+    .timer-section {
+        margin-bottom: 25px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .navbar-brand img {
+        width: 75%;
+        margin: 0;
+        padding: 10px 0px 10px 10px;
+    }
+    .navbar-toggler {
+        padding: 0;
+    }
+    .navbar-toggler span {
+        font-size: 25px;
+        padding-right: 10px;
+    }
+    .carousel-item img {
+        height: 575px;
+    }
+    .carousel-caption h2, .carousel-caption h2 span {
+        font-size: 40px;
+    }
+    .carousel-caption h3, .carousel-caption h3 span {
+        font-size: 32px;
+    }
+    .carousel-caption p {
+        font-size: 15px;
+    }
+    .carousel-caption p::before, .carousel-caption p::after {
+        top: -5px;
+        margin: 3px;
+    }
+    p {
+        font-size: 15px;
+    }
+    work p{
+        padding: 0 10px;
+    }
+    .same-image {
+        width: 94%;
+        margin: 3%;
+    }
+    .team-section {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}

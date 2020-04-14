@@ -1,0 +1,474 @@
+/* ================BASCI SETUP=======================
+================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Qlassik_TB;
+    position: relative;
+}
+
+
+
+/* ================REUSEABLE COMPONENT=======================
+================================================== */
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+h2{
+    color: #0eb493;
+    font-size: 28px;
+    font-family: QlassikBold_TB;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+p{
+    font-size: 18px;
+    color: #5b646e;
+    line-height: 24px;
+}
+h3 {
+	font-size: 20px;
+	color: #062033;
+	text-transform: capitalize;
+	font-family: QlassikBold_TB;
+}
+h4{
+    font-size: 18px;
+    color: #062033;;
+}
+h6{
+    font-size: 14px;
+    font-weight: bold;
+}
+section{
+    padding: 70px 0;
+    text-align: center;
+}
+.divider {
+	margin-bottom: 25px;
+}
+.divider::after, .divider::before {
+	content: "__________________";
+	position: relative;
+	bottom: 8px;
+	color: #ccc;
+}
+.divider span i {
+	color: #cccccc;
+	font-size: 20px;
+}
+
+
+/* ================HEADER SECTION=======================
+================================================== */
+
+#navigation {
+	background: rgb(14, 180, 147, 0.8);
+	padding: 0;
+	top: 0;
+	z-index: 25;
+	width: 100%;
+}
+span {
+	color: #fff;
+	font-size: 35px;
+}
+.navbar-collapse {
+	flex-grow: 0;
+}
+.nav-link {
+	display: block;
+    padding: 1rem !important;
+    border-top: 2px solid transparent;
+    color: #fff;
+}
+.nav-link:focus, .nav-link:hover, .active {
+    text-decoration: none;
+    color: #f2f2f2;
+	border-top: 2px solid rgb(238, 50, 182);
+}
+
+
+/* ================SLIDE SECTION=======================
+================================================== */
+
+section#slider {
+	padding: 0;
+	margin-top: -55px;
+}
+.carousel-item img {
+	height: 655px;
+	width: 100%;
+}
+.carousel-caption h2 {
+	font-size: 62px;
+	color: #fff;
+}
+.carousel-caption h2 span{
+    font-size: 62px;
+    font-weight: bold;
+}
+.carousel-caption h3 {
+	font-size: 48px;
+	color: #fff;
+}
+.carousel-caption h3 span{
+    font-size: 48px;
+    color: #0FEB9E;
+}
+.carousel-caption p{
+    font-size: 20px;
+    color: #fff;
+}
+.carousel-social-link li a {
+	padding: 5px;
+	font-size: 16px;
+	color: #727272;
+}
+.carousel-social-link li a:hover {
+	color: #fff;
+}
+.carousel-caption p::before, .carousel-caption p::after {
+	color: #0feb9e;
+	content: "___";
+	position: relative;
+	top: -8px;
+	margin: 10px;
+}
+
+
+
+/* ================FEATURES SECTION=======================
+================================================== */
+#feature {
+	background: #f4f7f9;
+}
+.feature-icon {
+    float: left;
+    width: 16%;
+}
+.feature-icon span i {
+	color: #0eb493;
+	border: 1px solid #0eb493;
+	padding: 10px;
+	font-size: 30px;
+	border-radius: 50%;
+}
+.feature-text {
+	float: left;
+	max-width: 80%;
+	margin-left: 10px;
+}
+.feature-text h3 {
+	text-align: left;
+	padding: 10px;
+}
+.feature-text p {
+	font-size: 15px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+
+
+/* ================WORK SECTION=======================
+================================================== */
+#work p {
+	margin-bottom: 50px;
+}
+.all-button button {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    background: transparent;
+    border-radius: 6px;
+    text-transform: capitalize;
+    color: #050505;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    font-family: QlassikBold_TB;
+}
+.all-button .mixitup-control-active{
+    background: #0eb493 !important;
+    color: #fff !important;
+}
+.image-gallery {
+    overflow: hidden;
+    margin-top: 25px;
+}
+.same-image {
+	float: left;
+    width: 25%;
+    position: relative;
+}
+.same-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.image-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(14,180,147,.9);
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    padding: 55px 0;
+    opacity: 0;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+    -moz-transform: rotateY(180deg) scale(0.5, 0.5);
+    -ms-transform: rotateY(180deg) scale(0.5, 0.5);
+    -o-transform: rotateY(180deg) scale(0.5, 0.5);
+    cursor: pointer;
+}
+.image-text span i {
+	font-size: 15px;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 8px;
+	border-radius: 50%;
+}
+.image-text h4 {
+	font-size: 18px;
+    color: #fff;
+	margin: 0;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.image-text p {
+    color: #fff;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.same-image:hover> .image-text{
+    opacity: 1;
+    transform: rotate(0deg) scale(1, 1);
+    -webkit-transform: rotate(0deg) scale(1, 1);
+    -moz-transform: rotate(0deg) scale(1, 1);
+    -ms-transform: rotate(0deg) scale(1, 1);
+    -o-transform: rotate(0deg) scale(1, 1);
+}
+
+
+
+
+/* ================TEAM SECTION=======================
+================================================== */
+#team p {
+	margin-bottom: 50px;
+}
+.team-section-image {
+	position: relative;
+}
+.team-section-image img {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+.team-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(14,180,147,0.8);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 20px 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transform: rotateY(180deg) scale(0.5,0.5);
+    -webkit-transform: rotateY(180deg) scale(0.5,0.5);
+    -moz-transform: rotateY(180deg) scale(0.5,0.5);
+    -ms-transform: rotateY(180deg) scale(0.5,0.5);
+    -o-transform: rotateY(180deg) scale(0.5,0.5);
+    cursor: pointer;
+}
+.team-text p{
+    color: #fff;
+}
+.team-text h5 {
+	margin-top: 25px;
+}
+.team-text-social{
+    margin-top: 25px;
+}
+.team-text-social a {
+	padding: 7px 5px;
+	display: inline-block;
+	background: #0d7c67;
+	width: 40px;
+	height: 40px;
+	font-size: 18px;
+    margin: 5px;
+    color: #fff;
+}
+.team-section-desc h4 {
+	margin-top: 20px;
+}
+.team-section-desc span {
+	color: #959595;
+	font-size: 14px;
+}
+.team-section-image:hover> .team-text{
+    opacity: 1;
+    transform: rotate(0deg) scale(1,1);
+    -webkit-transform: rotate(0deg) scale(1,1);
+    -moz-transform: rotate(0deg) scale(1,1);
+    -ms-transform: rotate(0deg) scale(1,1);
+    -o-transform: rotate(0deg) scale(1,1);
+}
+
+
+
+
+
+/* ================FACT SECTION=======================
+================================================== */
+#fact {
+	background: linear-gradient(rgba(30, 43, 54, 0.9), rgba(30, 44, 55, 0.6)), url("resourse/image/parallax/city.jpg");
+	background-color: rgba(6,32,51,0.8);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.fact-section{
+    margin-top: 50px;
+}
+.timer-icon {
+	border: 1px solid #fff;
+	padding: 30px;
+	font-size: 35px;
+	border-radius: 50%;
+	display: inline-flex;
+}
+.timer {
+	font-size: 60px;
+}
+.timer-section h3 {
+	color: #fff;
+	font-size: 25px;
+}
+
+
+/* ================DISCUSS SECTION=======================
+================================================== */
+#discus{
+    background: #fff;
+}
+#discus p{
+    margin-bottom: 50px;
+}
+.discus-left {
+	text-align: left;
+}
+.discus-left h3 {
+	font-size: 22px;
+	margin-bottom: 50px;
+}
+.discus-left p {
+	margin: 0 !important;
+	line-height: 26px;
+	font-size: 15px;
+}
+.discus-middle {
+	text-align: left;
+}
+.discus-middle h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+}
+.discus-middle button {
+	background: url("resourse/image/envelop.png") no-repeat transparent;
+	background-position: left center;
+	font-size: 20px;
+	float: right;
+	padding: 5px 0;
+	padding-left: 32px;
+	border: none;
+}
+.discus-right{
+    margin-top: 50px;
+}
+.discus-right a {
+	display: block;
+    font-size: 25px;
+    padding: 5px;
+	color: #7D7D7D;
+}
+.discus-right a:hover{
+    color: #dddddd;
+}
+
+
+
+/* ================FOOTER SECTION=======================
+================================================== */
+#footer {
+	background: #1EA78D;
+    border-top: 5px solid #333;
+    color: #fff !important;
+    text-align: left;
+}
+.footer-section p {
+	font-size: 15px;
+	color: #fff;
+}
+.footer-section ul li{
+    display: block;
+}
+.footer-section ul li a {
+	color: #fff;
+}
+.footer-input {
+	position: relative;
+}
+.footer-input input[type="text"] {
+	width: 100%;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	height: 35px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+.footer-input input[type="submit"] {
+	position: absolute;
+	right: 8px;
+	top: -5px;
+	background: transparent;
+	border: none;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}

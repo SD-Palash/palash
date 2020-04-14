@@ -1,0 +1,16 @@
+@font-face{
+    font-family: "Qlassik_TB";
+    src: url("../font/Qlassik_TB.eot") format("eot"), url("../font/Qlassik_TB.ttf") format("truetype"), url("../font/Qlassik_TB.woff2") format("woff2");
+}
+
+
+@font-face{
+    font-family: "QlassikBold_TB";
+    src: url("../font/QlassikBold.svg#QlassikBold_TB") format("svg"), url("../font/QlassikBold.woff") format("woff"), url("../font/QlassikBold_TB.eot") format("eot"), url("../font/QlassikBold_TB.ttf") format("truetype"), url("../font/QlassikBold_TB.woff2") format("woff2");
+}
+
+
+@font-face{
+    font-family: "QlassikMedium";
+    src: url("../font/QlassikMedium.svg#QlassikMedium") format("svg"), url("../font/QlassikMedium.woff") format("woff");
+}
